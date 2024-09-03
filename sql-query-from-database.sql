@@ -1,3 +1,6 @@
-SELECT unit_id, SUM(applicants), fiscal_year, fiscal_month
+SELECT  unit_id, 
+        SUM(applicants) AS sum_of_applicants, 
+        fiscal_year, 
+        fiscal_month
 FROM funnel
-GROUP BY unit_id;
+GROUP BY unit_id, fiscal_year, fiscal_month;
