@@ -11,9 +11,7 @@ library(readr)
 fit_and_write <-function(data, write_location, plot = FALSE){
   model <- lm(sum_of_applicants ~ ., data = data)
   
-  if (plot){
-    plot(model)
-  }
+  if (plot){ plot(model) }
   
   beta_fits <- coeff(model)
   write_csv(beta_fits, write_location)
