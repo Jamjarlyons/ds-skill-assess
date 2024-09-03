@@ -28,16 +28,15 @@ This repository contains a short, notional example of SQL & R files designed to 
 ## About My Submission: JaMaur Lyons
 Made Changes in models-main.R and sql-query-from-database.sql
 In sql-query-from-database.sql:
-  Fixed the error where 'fiscal_year' and 'fiscal_month' was not part of the grouping
-  Added alias to 'SUM(applicants)' for clarity
-  Changed formating of 'SELECT' for readibility
+Fixed the error where 'fiscal_year' and 'fiscal_month' was not part of the grouping
+Added alias to 'SUM(applicants)' for clarity
+Changed formating of 'SELECT' for readibility
 
 In models-main.R
-  Created a function for fitting and writting models for resusability
-    Added an option for plotting in the function because the comment doesn't say it has to plot
-  Removed library mentions because they are unnecessary if the libraries are lodaded
-  Replaced 'paste' with 'str_c' because the have a similar purpose but str_c was made to work specifically with mutate
-  Combined the select into one statement
-  
-  Notes:
-    I believe we could replace all of the library statements with 'library(tidyverse)', but i didn't because there are libraries in tidyverse that aren't used.
+Created a function for fitting and writting models for resusability
+Added an option for plotting in the function because the comment doesn't say it has to plot
+Removed library mentions because they are unnecessary if the libraries are lodaded
+Replaced 'paste' with 'str_c' because the have a similar purpose but str_c was made to work specifically with mutate
+Combined the select into one statement
+Notes:
+I believe we could replace all of the library statements with 'library(tidyverse)', but i didn't because there are libraries in tidyverse that aren't used.
